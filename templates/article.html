@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% block title %} Article {% endblock %} {% block body
+%}
+<nav class="navbar">
+  <div class="logo">
+    <img src="{{url_for("static", filename="assets/Icon.svg")}}" alt="logo" />
+    <label>FLiSP</label>
+  </div>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about/">About</a></li>
+    <li><a href="/blog/">Blog</a></li>
+  </ul>
+</nav>
+<h1>{{title}}</h1>
+<p>{{text}}</p>
+<hr />
+<p>These pages are still under construction.</p>
+{%endblock%}

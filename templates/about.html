@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block title %}About {% endblock %} {% block body %}
+<nav class="navbar">
+  <div class="logo">
+    <img src="{{url_for("static", filename="assets/Icon.svg")}}" alt="logo" />
+    <label>FLiSP</label>
+  </div>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about/">About</a></li>
+    <li><a href="/blog/">Blog</a></li>
+  </ul>
+</nav>
+<h1>About</h1>
+<p>This is the about page. Under construction.</p>
+{%endblock%}

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/*Universal CSS for Navbar*/
+.navbar {
+    background-color: white;
+    box-shadow: 0px 2px 12px blueviolet;
+    height: 5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 0.5rem;
+}
+
+.logo img {
+    height: 4rem;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0.5rem;
+}
+
+/*Home Section - Mobile First*/
+.section1 {
+    display: block;
+    padding: 3rem 0px 0px;
+    text-align: center;
+    align-items: center;
+    margin: 0px 1.5rem;
+}
+.section1 h1{
+    font-size: 1.5rem;
+}
+.section1 p {
+    padding: 1rem;
+}
+
+.section1 img {
+    width: 70%;
+    padding: 2rem;
+}
+.section1 button{
+    transition-duration: 0.4s;
+    width: 80%;
+    padding: 1rem;
+    background-color: #B9C1FF;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.section1 button:hover{
+    background-color: white;
+    color: #B9C1FF;
+    border: 2px solid #B9C1FF;
+    box-shadow: 0px 2px 12px grey;
+}
+.section2 {
+    display: none;
+}
+
+/*Home Section - Tab*/
+@media (min-width: 650px) {
+    .section1 {
+        height: 85vh;
+        padding: 2rem;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .section1 img {
+        min-width: 50%;
+        max-height: 60vh;
+    }
+    .section1 h1 {
+        font-size: 2rem;
+    }
+    
+    .section1 h1, .section1 p {
+        width: auto;
+    }
+    .section1 button {
+        width: 50%;
+    }
+}
+/*Home Section - Desktop*/
+@media (min-width: 1200px) {
+    .viewport{
+        display: flex;
+        height: 90vh;
+    }
+    .section1 {
+        margin: auto;
+        height: 50%;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+    .section1 h1 {
+        font-size: 2.5rem;
+        padding: 0px 0.5rem;
+    }
+    .section1 img{
+        display: none;
+    }
+    .section1 button {
+        max-width: 60%;
+    }
+    
+    .section2 {
+        display: block;
+        margin: auto;
+    }
+    .section2 img {
+        padding: 2rem;
+        max-width: 80%;
+    }
+}
