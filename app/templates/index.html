@@ -1,21 +1,10 @@
 {% extends 'base.html' %} {% block title %}Home {% endblock %} {% block body %}
-<nav class="navbar">
-  <div class="logo">
-    <img src="{{url_for("static", filename="assets/Icon.svg")}}" alt="logo" />
-    <label>FLiSP</label>
-  </div>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/about/">About</a></li>
-    <li><a href="/blog/">Blog</a></li>
-  </ul>
-</nav>
 <div class="viewport">
   <div class="section1">
     <h1>Manage the Chaos in your WG</h1>
     <p>Don't let the chaos of life follow you home.</p>
     <img src="{{url_for("static", filename="assets/home_image.svg")}}" alt="" />
-    <button onclick="location.href='/blog/';">To Blog</button>
+    <a href="{{ url_for('articles.blog')}}" class="blog-button"> To Blog </a>
   </div>
   <div class="section2">
     <img src="{{url_for("static", filename="assets/home_image.svg")}}" alt="" />

@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% block title %}Blog {% endblock %} {% block body %}
+<h1>Blog Articles</h1>
+<ul>
+  {% for blog in blogs %}
+  <li>
+    <a href="{{ url_for('articles.blogs', slug=blog['slug'])}}"
+      >{{ blog['title'] }}</a
+    >
+  </li>
+  {% endfor %}
+</ul>
+{%endblock%}

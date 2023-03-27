@@ -7,7 +7,9 @@
     list-style: none;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    color: black;
 }
+
 /*Universal CSS for Navbar*/
 .navbar {
     background-color: white;
@@ -57,7 +59,8 @@
     width: 70%;
     padding: 2rem;
 }
-.section1 button{
+.blog-button{
+    display: block;
     transition-duration: 0.4s;
     width: 80%;
     padding: 1rem;
@@ -68,7 +71,7 @@
     font-size: 1.5rem;
 }
 
-.section1 button:hover{
+.blog-button:hover{
     background-color: white;
     color: #B9C1FF;
     border: 2px solid #B9C1FF;
@@ -98,7 +101,8 @@
     .section1 h1, .section1 p {
         width: auto;
     }
-    .section1 button {
+    .blog-button {
+        display: block;
         width: 50%;
     }
 }
@@ -122,7 +126,7 @@
     .section1 img{
         display: none;
     }
-    .section1 button {
+    .blog-button {
         max-width: 60%;
     }
     

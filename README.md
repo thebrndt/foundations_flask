@@ -6,7 +6,7 @@ This is an ongoing project for foundations at CODE.
 
 ## Project Description
 
-This project messes around with some back-end stuff using python and flask
+This project messes around with some back-end stuff using python and flask and an implementation of databases for more user created rendering.
 
 ## Project Tech Stack
 
@@ -14,16 +14,17 @@ This project messes around with some back-end stuff using python and flask
 >CSS
 >Python
 >Flask
+>SQLite & SQLlchemy
 
 <hr>
 
 ## Changelog
 
-Essentially everything from last hand-in has changed. 
+- New File Structure
 - New and updated HTML and CSS.
-- Implementation of backend with flask and routing, etc.
-- Signup page replaced with "Blog" page.
+- Implementation of SQLite database using SQLAlchemy
+- Blogs now rendering from database and not dictionaries.
 
 ### Notes
-Several bugs to fix (looping, dynamic routing).
-Further implementation of pages to be done.
+- Issues with database relationships and getting foreign keys to work
+- Further implementation of pages to be done

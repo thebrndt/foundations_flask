@@ -12,6 +12,21 @@
     {%endblock%}
   </head>
   <body>
+    <nav class="navbar">
+      <a href="/">
+        <div class="logo">
+          <img src="{{url_for("static", filename="assets/Icon.svg")}}"
+          alt="logo"/>
+          <label>FLiSP</label>
+        </div>
+      </a>
+
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="{{ url_for('simple_pages.about') }}">About</a></li>
+        <li><a href="{{ url_for('articles.blog') }}">Blog</a></li>
+      </ul>
+    </nav>
     {%block body%}{%endblock%}
   </body>
 </html>
